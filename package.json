@@ -1,0 +1,50 @@
+{
+  "name": "@gd/puppeteer-examples",
+  "version": "0.0.0",
+  "dependencies": {
+    "puppeteer": "^5.2.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.4",
+    "cucumber": "^6.0.5"
+  },
+  "ava": {
+    "files": [
+      "dist/**/avaTests/*.js"
+    ],
+    "extension": [
+      "ts"
+    ],
+    "require":[
+      "ts-node/register"
+    ]
+  }
+  ,
+  "scripts": {
+    "ava": "ava",
+    "start": "lite-server",
+    "runTS": "ts-node  src/test/launcher.ts",
+    "testCuke": "cucumber-js",
+    "test": "npm run ava dist/my_test.js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.3.1",
+    "@cucumber/pretty-formatter": "^1.0.0-alpha.1",
+    "@types/chai": "^4.2.9",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^13.5.3",
+    "@types/puppeteer": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.21.0",
+    "@typescript-eslint/parser": "^2.21.0",
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-cucumber": "^1.4.0",
+    "lodash": "^4.17.19",
+    "puppeteer": "^2.1.0",
+    "ts-node": "^8.6.2",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.5",
+    "ava": "^3.15.0",
+    "@ava/typescript": "^1.1.1",
+    "import-cwd": "^3.0.0"
+  }
+}
