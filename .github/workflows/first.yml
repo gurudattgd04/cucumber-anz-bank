@@ -14,5 +14,5 @@ jobs:
        with:
         node-version: 14.17.3
      - name: npm Install
-       uses: Jaid/action-npm-install@v1.2.4
+       run: npm install
        
