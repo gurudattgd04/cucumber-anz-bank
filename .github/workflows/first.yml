@@ -10,4 +10,4 @@ jobs:
      - name: Step one
        uses: actions/checkout@v2
      - name: Setup Node.js environment
-       uses: actions/setup-node@v2.4.1
+       uses: actions/setup-node@v14.17.3
