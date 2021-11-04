@@ -1,5 +1,5 @@
 //import { assert } from 'chai';
-import * as importCwd from "import-cwd";
+const importCwd = require('import-cwd');
 import {MyWorld} from "../world/MyWorld";
 import {DataTable} from "cucumber/lib";
 
