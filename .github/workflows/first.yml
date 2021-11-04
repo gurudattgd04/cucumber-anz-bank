@@ -9,6 +9,5 @@ jobs:
      steps: 
      - name: Step one
        uses: actions/checkout@v2
-     - name: Step two
      - name: Setup Node.js environment
        uses: actions/setup-node@v2.4.1
