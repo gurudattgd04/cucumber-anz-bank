@@ -5,7 +5,7 @@
     "puppeteer": "^5.2.1",
     "ts-node": "^8.3.0",
     "typescript": "^3.6.4",
-    "cucumber": "^7.3.1"
+    "cucumber": "^6.0.5"
   },
   "ava": {
     "files": [
@@ -27,7 +27,7 @@
     "test": "npm run ava dist/my_test.js"
   },
   "devDependencies": {
-    "@cucumber/cucumber": "^7.3.1",
+    "@types/cucumber": "^4.0.7",
     "@cucumber/pretty-formatter": "^1.0.0-alpha.1",
     "@types/chai": "^4.2.9",
     "@types/lodash": "^4.14.149",
