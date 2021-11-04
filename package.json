@@ -5,7 +5,7 @@
     "puppeteer": "^5.2.1",
     "ts-node": "^8.3.0",
     "typescript": "^3.6.4",
-    "cucumber": "^6.0.5"
+    "@cucumber/cucumber": "^8.0.0-rc.1"
   },
   "ava": {
     "files": [
@@ -23,11 +23,11 @@
     "ava": "ava",
     "start": "lite-server",
     "runTS": "ts-node  src/test/launcher.ts",
-    "testCuke": "./node_modules/.bin/cucumber-js --require-module ts-node/register",
+    "testCuke": "cucumber-js",
     "test": "npm run ava dist/my_test.js"
   },
   "devDependencies": {
-    "@types/cucumber": "^4.0.7",
+    "@types/cucumber": "^7.0.0",
     "@cucumber/pretty-formatter": "^1.0.0-alpha.1",
     "@types/chai": "^4.2.9",
     "@types/lodash": "^4.14.149",

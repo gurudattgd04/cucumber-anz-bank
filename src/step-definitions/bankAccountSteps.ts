@@ -1,7 +1,8 @@
 //import { assert } from 'chai';
+import {DataTable} from "@cucumber/cucumber";
+
 const importCwd = require('import-cwd');
 import {MyWorld} from "../world/MyWorld";
-import {DataTable} from "cucumber/lib";
 
 // @ts-ignore
 const {Given, When} = importCwd("@cucumber/cucumber");

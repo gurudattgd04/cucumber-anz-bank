@@ -1,4 +1,4 @@
-import * as importCwd from "import-cwd";
+const importCwd = require("import-cwd");
 import {MyWorld} from "../world/MyWorld";
 
 // @ts-ignore

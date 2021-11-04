@@ -1,5 +1,6 @@
-import * as importCwd from "import-cwd";
-import {World} from "cucumber";
+import {World} from "@cucumber/cucumber";
+
+const importCwd = require("import-cwd");
 import {Browser, Page} from "puppeteer";
 import * as puppeteer from "puppeteer";
 import {ElementHandle} from "puppeteer";
@@ -7,12 +8,12 @@ import {ElementHandle} from "puppeteer";
 // @ts-ignore
 const {setWorldConstructor} = importCwd("@cucumber/cucumber");
 
-export class MyWorld implements World{
+export class MyWorld implements World {
     page: Page;
     browser: Browser;
     element: ElementHandle;
     readonly options: any;
-    readonly attach: Function;
+    //readonly attach: Function;
     parameters: any;
 
     constructor(options: any){
@@ -42,6 +43,16 @@ export class MyWorld implements World{
     async tearDownBrowser(){
       await this.page.close();
       await this.browser.close();
+    }
+
+    [key: string]: any;
+
+    attach(data: Buffer  | string, mediaType: string | undefined, callback: (() => void) | undefined): void | Promise<void> {
+        return undefined;
+    }
+
+    log(text: string): void | Promise<void> {
+        return undefined;
     }
 }
 
