@@ -23,7 +23,7 @@
     "ava": "ava",
     "start": "lite-server",
     "runTS": "ts-node  src/test/launcher.ts",
-    "testCuke": "cucumber-js",
+    "testCuke": "./node_modules/.bin/cucumber-js --require-module ts-node/register",
     "test": "npm run ava dist/my_test.js"
   },
   "devDependencies": {
