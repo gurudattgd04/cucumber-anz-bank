@@ -14,5 +14,5 @@ jobs:
        with:
         node-version: 14.17.3
      - name: npm Install
-       run: npm install
+       run: npm install | npm run testCuke
        
